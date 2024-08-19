@@ -1,0 +1,750 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+  margin: 0;
+}
+
+
+
+header{
+  z-index: 1000;
+}
+
+@media (min-width:767px) {
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    overflow-x: hidden;
+    background-color: #a7afac;
+    padding-top: 11rem; /* ヘッダーの高さ分のスペースを確保 */
+  }
+
+  header.header09 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: #a7afac00; /* 背景色を指定してヘッダーが見やすくします */
+  }
+
+  header.header09 {
+    padding: 2rem 1rem;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* ヘッダー09 */
+header.header09 {
+  padding: 2rem 1rem;
+}
+
+div.logo h2{
+  text-align: center;
+  width: 75%;
+  height: 30px;
+  margin: 0 auto;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1.75px #000;
+  font-size: 2rem;
+}
+
+nav.nav {
+  border-top: 1px solid #000;
+  padding-top: 1.5rem;
+  margin: 1.5rem auto 0;
+  max-width: 700px;
+}
+
+nav.nav ul.item {
+  display: flex;
+  justify-content: center;
+  
+}
+
+nav.nav ul.item li.list {
+  padding: 0 1rem;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: 2px solid #000000;
+  background-color: #00000030;
+  border-radius: 30px;
+  transition: all 0.2s;
+}
+
+nav.nav ul.item li.list:hover{
+  transform: scale(1.12);
+}
+
+nav.nav ul.item li.list a {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.578);
+  -webkit-text-stroke: 1.25px #000;
+  font-size: 1.25rem;
+}
+
+/* キービジュアル */
+.fv-container09 {
+  max-width: 960px;
+  height: 40vh;
+  background: url(imgs/PORTFORIO1.png) no-repeat center;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+#menu-btn,
+.nav-hidden {
+  display: none;
+}
+
+/* カルーセル */
+
+.top__works{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 800;
+}
+
+.works__explain{
+  display: block;
+  margin-left: 250px;
+}
+
+.works__explain p{
+  text-align: center;
+}
+
+.works__explain h2{
+  padding-top: 2rem;
+  margin: 1.5rem auto 0;
+  max-width: 700px;
+  border-top: 1px solid #000;
+  margin-top: 75px;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1.75px #000;
+  font-size: 4rem;
+}
+
+.top__works img {
+ width: 100%;
+ display: flex;
+ align-items: center;
+}
+
+.top__works video {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  margin-left: 75px;
+ }
+
+ .container {
+  margin: 100px auto;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+  z-index: 900;
+}
+
+.carousel {
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  z-index: 500;
+}
+
+.items {
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  line-height: 200px;
+  font-size: 5em;
+  text-align: center;
+  color: #000000;
+  opacity: 0.95;
+  border-radius: 10px;
+}
+
+
+
+.a { transform: rotateY(0deg) translateZ(250px); background: #ffffff00;}
+.b { transform: rotateY(60deg) translateZ(250px); background: #ffffff00;}
+.c { transform: rotateY(120deg) translateZ(250px); background: #ffffff00;}
+.d { transform: rotateY(180deg) translateZ(250px); background: #ffffff00;}
+.e { transform: rotateY(240deg) translateZ(250px); background: #ffffff00;}
+.f { transform: rotateY(300deg) translateZ(250px); background: #ffffff00;}
+
+.next, .prev {
+  margin-top: 100px;
+  position: absolute;
+  top: 50%;
+  padding: 1em 1em;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.481);
+  -webkit-text-stroke: 1.75px #000;
+  font-size: 3rem;
+  transform: translateY(-50%);
+  z-index: 900;
+}
+
+.next:hover, .prev:hover { color: #ffffff; }
+.next:active, .prev:active {
+  top: calc(50% + 4px);
+}
+.next { right: -3em; }
+.prev { left: -3em; }
+
+.top__skills{
+  display: flex;
+  margin-top: 150px;
+}
+
+.top__skills h2{
+  padding-top: 2rem;
+  margin: 1.5rem auto 0;
+  width: 400px;
+  border-top: 1px solid #000;
+  margin-top: 200px;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1.75px #000;
+  font-size: 4rem;
+}
+
+.skills__explain{
+  display: block;
+  margin-right: 200px;
+}
+
+.skills__explain p{
+  text-align: center;
+}
+
+.top__skills img {
+  width: 50%;
+  padding-top: 75px;
+ }
+
+ .top__about{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  height: 300px;
+}
+
+.about__explain{
+  display: block;
+  margin-left: 200px;
+}
+
+.about__explain p{
+  text-align: center;
+}
+
+.top__about h2{
+  padding-top: 2rem;
+  margin: 1.5rem auto 0;
+  width: 400px;
+  border-top: 1px solid #000;
+  margin-top: 200px;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1.75px #000;
+  font-size: 4rem;
+}
+
+.top__about img{
+  max-width: 150px;
+  padding-top: 75px;
+}
+
+.top__contact{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.contact__explain{
+  display: block;
+  margin-right: 150px;
+}
+
+.contact__explain p{
+  text-align: center;
+}
+
+.top__contact h2{
+  padding-top: 2rem;
+  margin: 1.5rem auto 0;
+  max-width: 700px;
+  border-top: 1px solid #000;
+  margin-top: 200px;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1.75px #000;
+  font-size: 4rem;
+}
+
+.top__contact img {
+  max-width: 250px;
+  max-height: 200px;
+  padding-top: 100px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+.wrapper{
+  overflow: hidden;
+}
+
+.parallax {
+  border-radius: 8px;
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  z-index: -1;
+}
+
+.parallax img{
+ width: 100%;
+ opacity: 0.2;
+}
+
+
+.large {
+  width: 100px;
+}
+
+.medium {
+  width: 75px;
+}
+
+.small {
+  width: 50px;
+}
+
+@keyframes parallax-large-anim {
+  from {
+    transform: translateY(500px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.large {
+  animation: parallax-large-anim linear;
+  animation-timeline: scroll();
+}
+
+@keyframes parallax-small-anim {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.small {
+  animation: parallax-small-anim linear;
+  animation-timeline: scroll();
+}
+
+
+
+
+/* SPここから */
+@media (max-width: 768px) {
+  
+  body{
+    max-width: 768px;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    overflow-x: hidden;
+    background-color: #a7afac;
+  }
+
+  #menu-btn {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 3;
+  }
+
+  #menu-btn span,
+  #menu-btn span::before,
+  #menu-btn span::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    border-radius: 3px;
+    background: #a6a6a6;
+    position: absolute;
+    transition: 0.2s;
+  }
+
+  #menu-btn span {
+    top: 0;
+  }
+
+  #menu-btn span:before {
+    top: 8px;
+  }
+
+  #menu-btn span:after {
+    top: 16px;
+  }
+
+  #nav-input:checked~#menu-btn span {
+    top: 8px;
+    transform: rotate(45deg);
+  }
+
+  #nav-input:checked~#menu-btn span::before {
+    opacity: 0;
+  }
+
+  #nav-input:checked~#menu-btn span::after {
+    top: 0;
+    transform: rotate(-90deg);
+  }
+
+  header{
+    max-width: 768px;
+    width: 100%; /* 親要素の幅に従う */
+    z-index: 1000;
+  }
+
+
+  div.logo h2{
+    text-align: center;
+    width: 75%;
+    margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1.75px #000;
+    font-size: 3rem;
+  }
+
+  header.header09 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: #a7afac00; /* 背景色を指定してヘッダーが見やすくします */
+  }
+
+  nav.nav {
+    width: 230px;
+    height: 30vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    transition: 0.5s;
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  nav.nav ul.item {
+    display: block;
+    padding: 4rem 2rem;
+  }
+
+  nav.nav ul.item li.list {
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  #nav-input:checked~nav.nav {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  a {
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* キービジュアル */
+  .fv-container09 {
+    width: 75% ; /* コンテナの幅を調整 */
+    height: 40vh;
+    background: url(imgs/PORTFORIO1.png) no-repeat center center;
+    background-size: contain;
+    margin-top: 75px;
+    margin-left: 110px; /* コンテナ全体の位置を調整 */
+  }
+
+#menu-btn,
+.nav-hidden {
+  display: none;
+}
+
+/* 768px以上の位置にあるパララックス要素 */
+.parallax.large,
+.parallax.medium {
+  display: none;
+}
+
+/* 操作範囲の制限 */
+.wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.top__works{
+  display: block;
+  max-width: 767px;
+  width: 100%;
+}
+
+.container{
+width: 75%;
+margin-left: 300px;
+}
+
+
+.works__explain{
+  display: block;
+}
+
+.works__explain p{
+  text-align: center;
+}
+
+.works__explain h2{
+  text-align: center;
+  border-top: 1px solid #000;
+  margin-top: 75px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1.75px #000;
+  font-size: 4rem;
+}
+
+.top__works img {
+ width: 75%;
+ display: flex;
+ align-items: center;
+}
+
+.top__works video {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  margin-left: 75px;
+ }
+
+ .container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 200px;
+  height: 100px;
+  position: relative;
+  perspective: 1000px;
+  z-index: 900;
+}
+
+.carousel {
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  z-index: 500;
+}
+
+.items {
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  line-height: 200px;
+  font-size: 5em;
+  text-align: center;
+  color: #000000;
+  opacity: 0.95;
+  border-radius: 10px;
+}
+
+.a { transform: rotateY(0deg) translateZ(250px); background: #ffffff00;}
+.b { transform: rotateY(60deg) translateZ(250px); background: #ffffff00;}
+.c { transform: rotateY(120deg) translateZ(250px); background: #ffffff00;}
+.d { transform: rotateY(180deg) translateZ(250px); background: #ffffff00;}
+.e { transform: rotateY(240deg) translateZ(250px); background: #ffffff00;}
+.f { transform: rotateY(300deg) translateZ(250px); background: #ffffff00;}
+
+.next, .prev {
+  margin-top: 100px;
+  position: absolute;
+  top: 50%;
+  padding: 1em 1em;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.481);
+  -webkit-text-stroke: 1.75px #000;
+  font-size: 3rem;
+  transform: translateY(-50%);
+  z-index: 900;
+}
+
+.next:hover, .prev:hover { color: #ffffff; }
+.next:active, .prev:active {
+  top: calc(50% + 4px);
+}
+.next { right: -3em; }
+.prev { left: -3em; }
+
+.top__skills{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.top__skills h2{
+  padding-top: 2rem;
+  margin: 1.5rem auto 0;
+  width: 400px;
+  border-top: 1px solid #000;
+  margin-top: 200px;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1.75px #000;
+  font-size: 4rem;
+}
+
+.skills__explain{
+  display: block;
+  text-align: center;
+}
+
+.skills__explain p{
+  text-align: center;
+}
+
+.top__skills img {
+  width: 50%;
+  margin-right: 60px;
+ }
+
+ .top__about{
+  display: block;
+  align-items: center;
+  height: 300px;
+}
+
+.about__explain h2{
+  display: block;
+}
+
+.about__explain p{
+  text-align: center;
+  font-size: .75rem;
+}
+
+.top__about h2{
+  text-align: center;
+  margin-left: 175px;
+  width: 400px;
+  border-top: 1px solid #000;
+  margin-top: 200px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1.75px #000;
+  font-size: 4rem;
+}
+
+.top__about img{
+  max-width: 150px;
+  margin-right: 50px;
+  
+}
+
+.top__contact{
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contact__explain{
+  display: block;
+  text-align: center;
+}
+
+.contact__explain p{
+  text-align: center;
+}
+
+.top__contact h2{
+  padding-top: 2rem;
+  margin: 1.5rem auto 0;
+  max-width: 700px;
+  border-top: 1px solid #000;
+  margin-top: 200px;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1.75px #000;
+  font-size: 4rem;
+}
+
+.top__contact img {
+  width: 40%;
+  height: 40%;
+  margin: auto;
+}
+
+
+}
+
